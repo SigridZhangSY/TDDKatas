@@ -1,6 +1,6 @@
 
 public class PrimeComposite {
-	public boolean isPrime(int num){
+	private boolean isPrime(int num){
 		if(num == 1)
 			return false;
 		if(num == 2)
@@ -12,7 +12,7 @@ public class PrimeComposite {
 		return true;
 	}
 	
-	public boolean isEven(int num){
+	private boolean isEven(int num){
 		if(num%2 == 0)
 			return true;
 		else
