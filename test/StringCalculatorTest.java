@@ -47,7 +47,7 @@ public class StringCalculatorTest {
 	}
 
 	@Test
-	public void strSplitBySpecifiedDelimiters() throws Exception{
+	public void strWithSpecifiedDelimiters() throws Exception{
 		assertEquals(res.getRes(";\n1;2"), 3);
 	}
 	
@@ -69,5 +69,23 @@ public class StringCalculatorTest {
 		assertEquals(res.getRes("1001,1"), 1);
 		assertEquals(res.getRes("1000,1"), 1001);
 		assertEquals(res.getRes("1001,1,2"), 3);
+	}
+	
+	@Test
+	public void strWithSpecifiedDelimitersOfAnyLength() throws Exception{
+		assertEquals(res.getRes("[***]\n1***2"), 3);
+		assertEquals(res.getRes("[***]\n1***2***3"), 6);
+	}
+	
+	@Test
+	public void strWithMultipleDelimiters() throws Exception{
+		assertEquals(res.getRes("[*][%]\n1*2"), 3);
+		assertEquals(res.getRes("[*][%]\n1*2%3"), 6);
+	}
+	
+	@Test
+	public void strWithMultipleDelimitersOfAnyLength() throws Exception{
+		assertEquals(res.getRes("[**][%%%]\n1**2"), 3);
+		assertEquals(res.getRes("[**][%%%]\n1**2%%%3"), 6);
 	}
 }
