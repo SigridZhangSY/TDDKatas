@@ -1,6 +1,6 @@
 
 public class OddEven {
-	public Boolean isPrime(int num) {
+	private Boolean isPrime(int num) {
 		if(num == 2)
 			return true;
 		if(num%2 == 0)
@@ -15,7 +15,7 @@ public class OddEven {
 		
 	}
 	
-	public Boolean isEven(int num){
+	private Boolean isEven(int num){
 		if(num%2 == 0)
 			return true;
 		return false;
