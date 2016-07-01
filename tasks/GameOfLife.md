@@ -34,3 +34,61 @@ next generation of the grid, follow these four rules:
     ...**...
     ...**...
     ........
+    
+#Tasks
+
+   1. grid is empty [3min][2min47s]
+      - input:
+        0 0
+      - output:
+        throws exception "gird is empty"
+   2. all cells are died [3min][4min]
+      - input:
+        3 3
+        ...
+        ...
+        ...
+      - output:
+        ...
+        ...
+        ...
+   3. calculate the next generation according to rule 1[10min][7min56s]
+      - input:
+        3 3
+        ...
+        .*.
+        ...
+      - output:
+        ...
+        ...
+        ...
+   4. calculate the next generation according rule 2 [15min][26min]
+      - input:
+        3 3
+        ..*
+        .**
+        .**
+      - output:
+        ..*
+        ...
+        .**
+   5.  calculate the next generation according rule 3 [10min][2min20s]
+      - input:
+        3 3
+        ..*
+        .**
+        ..*
+      - output:
+        ..*
+        .**
+        ..*
+   6. calculate the next generation according rule 4 [10min][2min]
+      - input:
+        3 3
+        ..*
+        .**
+        ...
+      - output:
+        .**
+        .**
+        ...
