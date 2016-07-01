@@ -21,8 +21,7 @@ next generation of the grid, follow these four rules:
    Examples: * indicates live cell, . indicates dead cell
 
    Example input: (4 x 8 grid)
-   
-   4 8
+    4 8
    ........
    ....*...
    ...**...
