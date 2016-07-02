@@ -40,7 +40,7 @@ Answer: 51.60 EUR
 
 # Tasks
 
-1. just bu book [3min]  1min46s
+1. just buy 1 book [3min]  1min46s
    - input {1, 0, 0, 0, 0}, return 8
    - input {0, 0, 0, 0 ,0}, return 0
 2. buy 5 different books [3min]  2min47s
